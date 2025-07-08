@@ -45,11 +45,30 @@
   background-color: white;
   overflow: hidden;
 }
+
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+
   </style>    
   </head>
   <body>
     <main>
         <h1>DATABK00101</h1>
+
+      <button onclick="myFunction()">Dark</button>
+      
         <hr>
   <button class="accordion">Data Engineering with Databricks</button>
 <div class="panel">
@@ -629,6 +648,13 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+} 
+
+  
 </script>
   </body>
 </html>
